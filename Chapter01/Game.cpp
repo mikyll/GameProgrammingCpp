@@ -74,11 +74,6 @@ bool Game::Initialize()
 	mPaddlePos.x = 10.0f;
 	mPaddlePos.y = windowHeight/2.0f;
 	
-	/*mBallPos.x = windowWidth / 2.0f;
-	mBallPos.y = windowHeight /2.0f;
-	mBallVel.x = -200.0f;
-	mBallVel.y = 235.0f;*/
-	
 	// second player
 	mPaddle2Pos.x = windowWidth - 10.0f - thickness;
 	mPaddle2Pos.y = windowHeight / 2.0f;
@@ -157,10 +152,6 @@ void Game::UpdateGame()
 	{
 		deltaTime = 0.05f;
 	}
-
-	//test
-	//std::cout << 1000.0f / deltaTime << "\n";
-	//std::cout << mBallPos.y << "\n";
 
 	// Update tick counts (for next frame)
 	mTicksCount = SDL_GetTicks();
